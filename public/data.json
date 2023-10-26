@@ -1,0 +1,104 @@
+{
+    "proyectos": [
+        {
+            "id": 1,
+            "titulo": "E-Commerce",
+            "descripcion": "Una copia del famoso E-Commerce Mercado Libre",
+            "url": "https://github.com/martomorri/tp7_router.git",
+            "tecnologia": "React",
+            "favorito": false,
+            "fecha_creacion": "2023/07/13",
+            "imagenes": [""]
+        },
+        {
+            "id": 2,
+            "titulo": "Flag Guesser",
+            "descripcion": "Un juego para adivinar la bandera",
+            "url": "https://github.com/martomorri/tp6_banderitasgod.git",
+            "tecnologia": "React",
+            "favorito": false,
+            "fecha_creacion": "2023/06/09",
+            "imagenes": [""]
+        },
+        {
+            "id": 3,
+            "titulo": "Gestor de citas",
+            "descripcion": "Un gestor de citas de veterinario",
+            "url": "https://github.com/martomorri/tp4_kaliszczak_morrison.git",
+            "tecnologia": "React",
+            "favorito": false,
+            "fecha_creacion": "2023/05/04",
+            "imagenes": [""]
+        },
+        {
+            "id": 4,
+            "titulo": "ToDo List",
+            "descripcion": "Una lista de tareas con boton para borrar, completar y agregar cosas para hacer",
+            "url": "https://github.com/LautyKali/TP2_Kaliszczak_Morrison.git",
+            "tecnologia": "Javascript Vanilla",
+            "favorito": false,
+            "fecha_creacion": "2023/03/23",
+            "imagenes": [""]
+        },
+        {
+            "id": 5,
+            "titulo": "Quien Quiere Ser Millonario?",
+            "descripcion": "Una replica del famoso juego de preguntas y respuestas.",
+            "url": "https://github.com/martomorri/TP07_Morrison.git",
+            "tecnologia": "C# .net MVC",
+            "favorito": false,
+            "fecha_creacion": "2022/08/18",
+            "imagenes": [""]
+        },
+        {
+            "id": 6,
+            "titulo": "DePhished",
+            "descripcion": "Una extension de Chrome que analiza mails y detecta si el mismo es potencial de phishing",
+            "url": "https://github.com/martomorri/DePhished.git",
+            "tecnologia": "Javascript / Chrome Extension",
+            "favorito": false,
+            "fecha_creacion": "2023/05/15",
+            "imagenes": [""]
+        },
+        {
+            "id": 7,
+            "titulo": "Escape Room Virtual",
+            "descripcion": "Un simulador de una sala de escape de La Casa de Papel",
+            "url": "https://github.com/martomorri/TP05_Cohen_Morrison_Perez_Singer.git",
+            "tecnologia": "C# .net MVC",
+            "favorito": false,
+            "fecha_creacion": "2022/05/26",
+            "imagenes": [""]
+        },
+        {
+            "id": 8,
+            "titulo": "Cancheros",
+            "descripcion": "Un pagina web que gestiona el alquiler de canchas de futbol",
+            "url": "https://github.com/LautyKali/ProyectoFinal.git",
+            "tecnologia": "React",
+            "favorito": false,
+            "fecha_creacion": "2023/05/29",
+            "imagenes": [""]
+        },
+        {
+            "id": 9,
+            "titulo": "DragonBall Wiki",
+            "descripcion": "Una pagina que contiene información de la famosa serie japonesa",
+            "url": "https://github.com/chuchox4/TP9DB.git",
+            "tecnologia": "C# .net MVC",
+            "favorito": false,
+            "fecha_creacion": "2022/10/13",
+            "imagenes": [""]
+        },
+        {
+            "id": 10,
+            "titulo": "Authentication",
+            "descripcion": "Un login y register basico y simple para Mobile",
+            "url": "https://github.com/martomorri/DAI-Login.git",
+            "tecnologia": "React Native",
+            "favorito": false,
+            "fecha_creacion": "2023/08/04",
+            "imagenes": [""]
+        }
+    ]
+}
