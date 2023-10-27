@@ -8,7 +8,7 @@
             "tecnologia": "React",
             "favorito": false,
             "fecha_creacion": "2023/07/13",
-            "imagenes": [""]
+            "imagenes": ["images/thumbnail1.png", "images/productos1.png", "images/homepage1.png"]
         },
         {
             "id": 2,

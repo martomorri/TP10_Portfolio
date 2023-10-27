@@ -1,0 +1,18 @@
+.card-body {
+    backdrop-filter: blur(2px);
+}
+
+.card {
+    background-size: cover;
+    min-height: 250px;
+}
+
+.contenedorTexto {
+    background-color: rgba(255, 255, 255,.5);
+    filter: opacity(100%) !important;
+    opacity: 100% !important;
+    max-width: fit-content;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
