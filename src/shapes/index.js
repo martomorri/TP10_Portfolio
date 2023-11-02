@@ -4,7 +4,7 @@ export const ProyectoShape = shape({
     id: number.isRequired,
     titulo: string.isRequired,
     descripcion: string.isRequired,
-    url: number.isRequired,
+    url: string.isRequired,
     tecnologia: string.isRequired,
     favorito: bool.isRequired,
     fecha_creacion: string.isRequired,

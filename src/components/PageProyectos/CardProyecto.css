@@ -1,18 +1,21 @@
-.card-body {
-    backdrop-filter: blur(2px);
-}
-
 .card {
-    background-size: cover;
-    min-height: 250px;
+    width: 18rem;
+    margin: 10px;
+    padding: 0;
 }
 
-.contenedorTexto {
-    background-color: rgba(255, 255, 255,.5);
-    filter: opacity(100%) !important;
-    opacity: 100% !important;
-    max-width: fit-content;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
+#imgCard {
+    max-width: auto !important;
+    max-height: 250px !important;
+}
+
+#verMasButton {
+    margin-top: 10px;
+}
+
+.favourite {
+    position: absolute;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
 }
