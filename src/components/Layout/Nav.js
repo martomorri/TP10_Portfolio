@@ -1,26 +1,40 @@
 import NavList from "./NavList";
 import './Nav.css'
+import NavItem from "./NavItem";
 
 function Nav() {
     const navItems = [
         {
-            item: "Home"
+            item: "Home",
+            path: "#home"
         },
         {
             item: "Mis proyectos",
-            path: "proyectos"
+            path: "/proyectos"
+        },
+        {
+            item: "Skills",
+            path: "#skills"
         },
         {
             item: "Contacto",
-            path: "contacto"
+            path: "#form-contacto"
         }
     ];
+
+    const navItemsRight = [
+        {
+            item: "★",
+            path: "/favoritos"
+        }
+    ]
 
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <NavList listPosition="left" navItems={navItems} />
+                    <NavList listPosition="right" navItems={navItemsRight} />
                 </div>
             </div>
         </nav>

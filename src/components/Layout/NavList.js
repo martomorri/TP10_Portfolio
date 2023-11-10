@@ -3,9 +3,9 @@ import { arrayOf } from 'prop-types'
 import { NavItemShape } from '../../shapes'
 import './NavList.css'
 
-function NavList({ navItems }) {
+function NavList({ navItems, listPosition }) {
   return (
-    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+    <ul id={listPosition} className="navbar-nav me-auto mb-2 mb-lg-0">
       {navItems.map((i) => (
         <NavItem
           item={i.item}

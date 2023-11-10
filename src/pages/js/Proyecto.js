@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { projectsContext } from "../../context/projectsContext"
 import CarouselImages from "../../components/Proyecto/CarouselImages"
 
@@ -26,6 +26,7 @@ function Proyecto() {
                 </p>
                 <a href={proyecto.url}>Link del Repositorio</a>
             </div>
+            <Link className="btn btn-primary" to={"/"}>Volver a la Home</Link>
         </div>
     )
 }
