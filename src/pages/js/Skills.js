@@ -5,8 +5,6 @@ import '../css/Skills.css'
 export default function Skills() {
     const devs = useContext(devsContext)
 
-    console.log(devs[0].skills)
-
     return (
         <div className="skills">
             <h1>Skills</h1>
