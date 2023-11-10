@@ -1,6 +1,5 @@
 import NavList from "./NavList";
 import './Nav.css'
-import NavItem from "./NavItem";
 
 function Nav() {
     const navItems = [
@@ -24,7 +23,7 @@ function Nav() {
 
     const navItemsRight = [
         {
-            item: "★",
+            item: "☆",
             path: "/favoritos"
         }
     ]

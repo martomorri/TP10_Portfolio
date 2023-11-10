@@ -1,3 +1,12 @@
 button {
     padding: 10;
 }
+
+.contact-form {
+    margin: 10px
+}
+
+.form-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
