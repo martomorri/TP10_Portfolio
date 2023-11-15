@@ -6,17 +6,15 @@ import Badge from "@mui/material/Badge";
 
 function NavItem({ item, path = "" }) {
   const { favProj } = useContext(favContext)
-  const size = item === '☆' ? "28px" : "16px"
-  const className = item === '☆' ? "m-0" : "btn btn-light"
-  const badge = item === '☆' ? favProj.length : 0
+  const badge = item instanceof Object ? favProj.length : 0
 
   return (
     <li className="nav-item">
-      <Badge id="badge" color="primary" badgeContent={badge}>
-        <a style={{ fontSize: size, textDecoration: "none", color: "black" }} className={className} href={path}>
+      <a className="btn btn-light" href={path}>
+        <Badge id="badge" color="primary" badgeContent={badge}>
           {item}
-        </a>
-      </Badge>
+        </Badge>
+      </a>
     </li>
   );
 }

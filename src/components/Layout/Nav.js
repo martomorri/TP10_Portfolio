@@ -1,4 +1,5 @@
 import NavList from "./NavList";
+import { StarBorder } from "@mui/icons-material";
 import './Nav.css'
 
 function Nav() {
@@ -23,7 +24,7 @@ function Nav() {
 
     const navItemsRight = [
         {
-            item: "☆",
+            item: <StarBorder />,
             path: "/favoritos"
         }
     ]
