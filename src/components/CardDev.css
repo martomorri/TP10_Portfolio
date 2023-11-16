@@ -3,3 +3,20 @@
     margin: 10px;
     padding: 0;
 }
+
+#cardDev{
+    border: 2px solid black;
+    background: white;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.25s ease;
+}
+
+   #cardDev:hover {
+    transform: translate(-20px, -20px);
+    border-color: gold;
+    background-color: gold;
+    
+  }
+  

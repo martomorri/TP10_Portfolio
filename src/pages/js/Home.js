@@ -19,7 +19,7 @@ function Home() {
                 {proyectos.map(p => {
                     if (p.id <= 6) return <CardProyecto proyecto={p}></CardProyecto>
                 })}
-                <Link to={"/proyectos"} className="btn btn-primary">Ver mas proyectos</Link>
+                <Link to={"/proyectos"} className="btn " id="botonVerMas">Ver mas proyectos</Link>
             </div>
         </div>
     )

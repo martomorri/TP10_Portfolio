@@ -7,7 +7,7 @@ function NavList({ navItems, listPosition }) {
   return (
     <ul id={listPosition} className="navbar-nav me-auto mb-2 mb-lg-0">
       {navItems.map((i) => (
-        <NavItem
+        <NavItem className="navItem"
           item={i.item}
           path={i.path}
         />

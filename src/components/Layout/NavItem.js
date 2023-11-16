@@ -10,8 +10,8 @@ function NavItem({ item, path = "" }) {
 
   return (
     <li className="nav-item">
-      <a className="btn btn-light" href={path}>
-        <Badge id="badge" color="primary" badgeContent={badge}>
+      <a className="btn" id="botonesNav" href={path}>
+        <Badge id="badge" color="secondary"  badgeContent={badge}>
           {item}
         </Badge>
       </a>

@@ -1,3 +1,25 @@
 #home {
     text-align: center;
+    background-color:  #640469
+}
+#cards{
+        text-align: center;
+        
+}
+
+#botonVerMas {
+    color: azure !important;
+    border-color: #020202;
+    border: 2px solid #030303 !important
+
+}
+
+#botonVerMas:hover {
+    color: #020202 !important;
+    background: gold;
+    border-color: gold !important;
+    transition: all 0.4s ease 0s;
+    border: 2px solid #000000 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
 }

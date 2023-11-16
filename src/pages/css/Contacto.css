@@ -3,7 +3,8 @@ button {
 }
 
 .contact-form {
-    margin: 10px
+    margin: 10px;
+    color: azure;
 }
 
 .form-group {

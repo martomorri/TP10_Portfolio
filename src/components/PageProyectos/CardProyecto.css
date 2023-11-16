@@ -19,3 +19,19 @@
     font-size: 24px;
     cursor: pointer;
 }
+
+
+
+.favourite:hover::before{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffee10;
+
+}
+.favourite:hover{
+    color: #ffee10;
+
+}
+
+.favourite:checked{
+    color: #ffee10;
+}

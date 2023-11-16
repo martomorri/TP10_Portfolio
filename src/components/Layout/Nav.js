@@ -30,7 +30,7 @@ function Nav() {
     ]
 
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <NavList listPosition="left" navItems={navItems} />

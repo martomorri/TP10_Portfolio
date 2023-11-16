@@ -14,6 +14,7 @@ function App() {
   const [proyectos, setProyectos] = useState([])
   const [favProj, setFavProj] = useState([])
   const [devs, setDevs] = useState([])
+  const [starColor, setStarColor] = useState("black")
 
   useEffect(() => {
     setDevs([...devs, { nombre: "Martin Morrison", skills: ["javascript", "react.js", "python", "c#", "sql"], foto: "images/morro.jpg", fecha_nacimiento: "2005-06-28", profesion: "Estudiante", linkedin: "", github: "" }, { nombre: "Lautaro Kaliszczak", skills: ["javascript", "react.js", "react-native", "css"], foto: "images/lauty.jpg", fecha_nacimiento: "2005-11-10", profesion: "Estudiante", linkedin: "", github: "" }])

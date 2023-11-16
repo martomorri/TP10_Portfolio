@@ -11,7 +11,7 @@ function Layout() {
   return (
     <>
       <Nav />
-      <div style={{ padding: 10 }}>
+      <div id="divGen" style={{ padding: 10 }}>
         <div id="home"><Home /></div>
         <div id="skills"><span><Skills /></span></div>
         <div id="form-contacto"><span><Contacto /></span></div>
