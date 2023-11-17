@@ -13,14 +13,11 @@ nav{
 }
 #botonesNav:hover::before{
     transform: scale(1.1);
-    box-shadow: 0 0 15px gold;
 
 }
 #botonesNav:hover{
     color: gold;
-    box-shadow: 0 0 5px gold;
     text-shadow: 0 0 5px gold;
-
 }
 
   

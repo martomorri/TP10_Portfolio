@@ -14,7 +14,7 @@
 }
 
    #cardDev:hover {
-    transform: translate(-20px, -20px);
+    transform: translate(-10px, -10px);
     border-color: gold;
     background-color: gold;
     
