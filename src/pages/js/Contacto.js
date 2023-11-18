@@ -11,7 +11,12 @@ const Contacto = () => {
 
   const onSubmit = (data) => console.log(data)
 
-  console.log(watch("nombre"))
+  const contacto = {
+    nombre: watch("nombre"),
+    mensaje: watch("mensaje")
+  }
+
+  console.log(contacto)
 
   return (
     <div className="contact-form">
