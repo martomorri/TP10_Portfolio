@@ -1,21 +1,34 @@
-import { Link } from 'react-router-dom'
+import { useForm } from 'react-hook-form'
 import "../css/Contacto.css";
 
 const Contacto = () => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm()
+
+  const onSubmit = (data) => console.log(data)
+
+  console.log(watch("nombre"))
+
   return (
     <div className="contact-form">
       <h1>Contactanos</h1>
-      <form action="mailto:martomorri@gmail.com" method="get" enctype="text/plain">
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group">
           <label htmlFor="name">Nombre:</label>
-          <input className='form-control' type="text" id="name" />
+          <input className='form-control' type="text" {...register("nombre", { required: true })} />
+          {errors.nombre && <span className='error'>Este campo es obligatorio</span>}
         </div>
         <div className="form-group">
           <label htmlFor="message">Mensaje:</label>
-          <textarea className='form-control' id="message" rows="4"></textarea>
+          <textarea className='form-control' rows="4" {...register("mensaje", { required: true })}></textarea>
+          {errors.mensaje && <span className='error'>Este campo es obligatorio</span>}
         </div>
         <div className='row'>
-          <Link to={"/proyectos"} className="btn " id="botonVerMas">Ver mas proyectos</Link>
+          <input type='submit' className="btn" id="botonVerMas" value="Enviar" />
         </div>
       </form>
     </div>
