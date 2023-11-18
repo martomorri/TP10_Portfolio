@@ -1,5 +1,5 @@
-import React from 'react';
-import "../css/Contacto.css"; 
+import { Link } from 'react-router-dom'
+import "../css/Contacto.css";
 
 const Contacto = () => {
   return (
@@ -11,15 +11,11 @@ const Contacto = () => {
           <input className='form-control' type="text" id="name" />
         </div>
         <div className="form-group">
-          <label htmlFor="fecha">Fecha:</label>
-          <input className='form-control' type="date" id="fecha" />
-        </div>
-        <div className="form-group">
           <label htmlFor="message">Mensaje:</label>
           <textarea className='form-control' id="message" rows="4"></textarea>
         </div>
         <div className='row'>
-          <button id='btn-submit' type="submit" class="btn btn-primary">Enviar</button>
+          <Link to={"/proyectos"} className="btn " id="botonVerMas">Ver mas proyectos</Link>
         </div>
       </form>
     </div>

@@ -1,0 +1,10 @@
+#spinner-div {
+    height: 300px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.car {
+    margin-bottom: 10px;
+}

@@ -1,24 +1,27 @@
-ul{
-    background-color:rgb(44, 41, 41);
+ul {
+  background-color: rgb(44, 41, 41);
 }
 
-nav{
-    background-color: rgb(44, 41, 41);
+nav {
+  background-color: rgb(44, 41, 41);
 }
 
-#botonesNav{
-    background-color:  rgb(44, 41, 41);;
-    color: azure;
-    margin: 5px;
-}
-#botonesNav:hover::before{
-    transform: scale(1.1);
-
-}
-#botonesNav:hover{
-    color: gold;
-    text-shadow: 0 0 5px gold;
+.navbar {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
 }
 
-  
- 
+#botonesNav {
+  background-color: rgb(44, 41, 41);
+  color: azure;
+  margin: 5px;
+}
+#botonesNav:hover::before {
+  transform: scale(1.1);
+}
+#botonesNav:hover {
+  color: gold;
+  text-shadow: 0 0 5px gold;
+}

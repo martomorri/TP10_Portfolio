@@ -1,21 +1,24 @@
 import { Spinner } from "react-bootstrap";
 import { arrayOf, string } from 'prop-types'
 import { Carousel } from "react-bootstrap";
+import './CarouselImages.css'
 
 function CarouselImages({ images }) {
-    return images ? (
-        <Carousel fade>
+    return images[0] !== "" ? (
+        <Carousel className="car" data-bs-theme="dark" fade>
             {images.map(i => {
-                <Carousel.Item>
-                    <img src={i} alt="" />
-                </Carousel.Item>
+                return (
+                    <Carousel.Item>
+                        <img src={'/' + i} alt="" width="100%" height="100%" />
+                    </Carousel.Item>
+                )
             })}
         </Carousel>
     ) : (
-        <Carousel.Item>
+        <div id="spinner-div" className="text-center">
             <Spinner animation="border" role="status">
             </Spinner>
-        </Carousel.Item>
+        </div>
     )
 }
 

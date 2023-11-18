@@ -1,22 +1,41 @@
 #cardDev {
-    width: 100%;
-    margin: 10px;
-    padding: 0;
+  width: 100%;
+  margin: 10px;
+  padding: 0;
+  text-align: center;
+  border-radius: 10px;
 }
 
-#cardDev{
-    border: 2px solid black;
-    background: white;
-    text-decoration: none;
-    color: black;
-    display: block;
-    transition: 0.25s ease;
+#cardDev {
+  background: rgb(44, 41, 41);
+  text-decoration: none;
+  color: azure;
+  display: block;
+  transition: 0.25s ease;
 }
 
-   #cardDev:hover {
-    transform: translate(-10px, -10px);
-    border-color: gold;
-    background-color: gold;
-    
+#cardDev:hover {
+  transform: translate(-10px, -10px);
+  border-color: gold;
+  background-color: gold;
+  color: rgb(44, 41, 41);
+  .social {
+    color: rgb(44, 41, 41);
   }
-  
+}
+
+#imgCard {
+  max-height: fit-content;
+  max-width: fit-content;
+  border-radius: 10px;
+}
+
+.icon {
+  width: 50px;
+}
+
+.social {
+  text-decoration: none;
+  color: azure;
+  margin: 10px;
+}

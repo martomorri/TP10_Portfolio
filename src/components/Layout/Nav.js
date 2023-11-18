@@ -6,11 +6,15 @@ function Nav() {
     const navItems = [
         {
             item: "Home",
-            path: "#home"
+            path: "/"
         },
         {
-            item: "Mis proyectos",
-            path: "/proyectos"
+            item: "About Us",
+            path: "#about-us"
+        },
+        {
+            item: "Proyectos",
+            path: "#proyectos"
         },
         {
             item: "Skills",

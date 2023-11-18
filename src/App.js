@@ -9,16 +9,31 @@ import { projectsContext } from './context/projectsContext';
 import { devsContext } from './context/devsContext';
 import './App.css';
 import Favoritos from './pages/js/Favoritos';
+import IndexPage from './pages/js/IndexPage';
 
 function App() {
   const [proyectos, setProyectos] = useState([])
   const [favProj, setFavProj] = useState([])
-  const [devs, setDevs] = useState([])
-  const [starColor, setStarColor] = useState("black")
-
-  useEffect(() => {
-    setDevs([...devs, { nombre: "Martin Morrison", skills: ["javascript", "react.js", "python", "c#", "sql"], foto: "images/morro.jpg", fecha_nacimiento: "2005-06-28", profesion: "Estudiante", linkedin: "", github: "" }, { nombre: "Lautaro Kaliszczak", skills: ["javascript", "react.js", "react-native", "css"], foto: "images/lauty.jpg", fecha_nacimiento: "2005-11-10", profesion: "Estudiante", linkedin: "", github: "" }])
-  }, [])
+  const devs = [
+    {
+      nombre: "Martin Morrison",
+      skills: ["javascript", "reactjs", "python", "csharp", "sql"],
+      foto: "/images/morro.png",
+      fecha_nacimiento: "2005-06-28",
+      profesion: "Estudiante",
+      linkedin: "https://www.linkedin.com/in/martin-morrison-1b6378274/",
+      github: "https://github.com/martomorri"
+    },
+    {
+      nombre: "Lautaro Kaliszczak",
+      skills: ["javascript", "reactjs", "css", "html"],
+      foto: "/images/lauty.png",
+      fecha_nacimiento: "2005-11-10",
+      profesion: "Estudiante",
+      linkedin: "https://www.linkedin.com/in/lautaro-kaliszczak-ben%C3%ADtez-92579a277/",
+      github: "https://github.com/LautyKali"
+    }
+  ]
 
   useEffect(() => {
     axios.get('data.json')
@@ -41,10 +56,12 @@ function App() {
         <devsContext.Provider value={devs}>
           <BrowserRouter>
             <Routes>
-              <Route path='/' element={<Layout />}></Route>
-              <Route path={"/proyectos"} element={<PageProyectos />}></Route>
-              <Route path={"/favoritos"} element={<Favoritos />}></Route>
-              <Route path={"/proyectos/:id"} element={<Proyecto />}></Route>
+              <Route path='/' element={<Layout />}>
+                <Route index element={<IndexPage />}></Route>
+                <Route path={"/proyectos"} element={<PageProyectos />}></Route>
+                <Route path={"/favoritos"} element={<Favoritos />}></Route>
+                <Route path={"/proyectos/:id"} element={<Proyecto />}></Route>
+              </Route>
             </Routes>
           </BrowserRouter>
         </devsContext.Provider>

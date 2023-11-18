@@ -1,9 +1,11 @@
 #home {
-  text-align: center;
   background-color: #640469;
+  margin: 10px;
+  margin-top: 70px;
 }
-#cards {
-  text-align: center;
+
+#about-us, #proyectos {
+  margin-bottom: 20px;
 }
 
 #botonVerMas {

@@ -1,0 +1,20 @@
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  width: 80px;
+  height: 80px;
+  transition: 0.4s ease;
+}
+
+.skill:hover {
+  border: 2px solid gold;
+  width: 85px;
+  height: 85px;
+  background-color: rgb(44, 41, 41);
+  border-radius: 10px;
+  box-shadow: 0 0 5px gold;
+  transform: translate(-10px, -10px);
+  transition: border 0s, width 0.4s, height 0.4s, border-radius 0.2s, box-shadow 0.5s, background-color 1s, transform 0.4s;
+}
