@@ -1,5 +1,6 @@
 #cardProyecto {
-    width: 17.5rem;
+    width: 18rem;
+    height: 21rem;
     margin: 10px;
     padding: 0;
     color: azure;
@@ -10,7 +11,8 @@
 }
 
 .fondoBody{
-    width: 17.5rem;
+    width: 18rem;
+    height: 21rem;
     height: 100%;
     padding: 0;
     position: relative;

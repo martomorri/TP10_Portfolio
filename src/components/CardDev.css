@@ -25,6 +25,7 @@
   #imgCard{
     transform: scale3d(1.1, 1.1, 1.1);
     box-shadow:  0 0 10px #640469;
+    transition: transform 0.4s;
   }
 }
 
@@ -32,6 +33,7 @@
   max-height: fit-content;
   max-width: fit-content;
   border-radius: 10px;
+  transition: 0.4s ease;
 }
 
 .icon {
