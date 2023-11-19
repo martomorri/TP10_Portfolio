@@ -1,97 +1,100 @@
-#cardProyecto{
-    width: 17.5rem;
-    height: 21rem;
-    margin: 11px;
-    padding: 0;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 1);
-    
+#cardProyecto {
+  width: 17.5rem;
+  height: 21rem;
+  margin: 11px;
+  padding: 0;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  transition: 0.3s ease;
 }
 
 #cardProyecto:hover {
-    transform: translate(-0%, -4%);
-    box-shadow: 0 0 10px gold;
-  }
-
-.fondoBody{
-    width: 17.5rem;
-    height: 21rem;
-    height: 100%;
-    padding: 0;
-    position: relative;
-    transition: opacity 0.3s ease;
-    border-radius: 10px;
-    margin: 0;
-    border: 1px solid rgba(255, 255, 255, 1);;
-    min-width: 17.5rem;
+  transform: translate(-0%, -4%);
+  box-shadow: 0 0 10px gold;
+  transition: all 0.3s;
 }
 
-
-#proyectTitle{
-    color: black;
-    opacity: 1;
+.fondoBody {
+  width: 17.5rem;
+  height: 21rem;
+  height: 100%;
+  padding: 0;
+  position: relative;
+  transition: 0.3s ease;
+  border-radius: 10px;
+  margin: 0;
+  min-width: 17.5rem;
 }
-#proyectText,#proyectUrl,#verMasButton{
-    opacity: 0;
+
+#proyectTitle {
+  color: #969696;
+  opacity: 1;
+}
+#proyectText,
+#proyectUrl,
+#verMasButton {
+  opacity: 0;
 }
 
 .fondoBody:hover {
-        opacity: 1;
-        backdrop-filter: blur(10px);
-        background: rgba(0, 0, 0, 0.5);
-        border-color: azure;
-        #proyectText,#proyectUrl,#verMasButton{
-            opacity: 1;
-        }
-        #proyectText,#proyectTitle{
-            color: azure;
-        }
+  opacity: 1;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.5);
+  border-color: azure;
+  #proyectText,
+  #proyectUrl,
+  #verMasButton {
+    opacity: 1;
+  }
+  #proyectText,
+  #proyectTitle {
+    color: azure;
+  }
 }
 
-.textoBody{
-    margin-top: 30px;
+.textoBody {
+  margin-top: 30px;
 }
 .textoBody .card-title {
-    color: black;
+  color: black;
 }
 
-
 #imgCard {
-    max-width: auto !important;
-    max-height: 250px !important;
+  max-width: auto !important;
+  max-height: 250px !important;
 }
 
 #verMasButton {
-    width: 100%;
-    color: azure;
+  width: 100%;
+  color: azure;
 }
 
 .favourite {
-    position: absolute;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1;
+  position: absolute;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
 }
 
 #verMasButton:hover {
-    color: #020202 !important;
-    background: gold;
-    border-color: gold !important;
-    display: inline-block;
-    transition: all 0.4s ease 0s;
-  }
-
-.favourite:hover::before{
-    transform: scale(1.1);
-    box-shadow: 0 0 15px gold !important;
-}
-.favourite:hover{
-    color: gold !important;
-    transition: all 0.2s ease 0s;
+  color: #020202 !important;
+  background: gold;
+  border-color: gold !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
 }
 
-.favourite:checked{
-    color: gold;
+.favourite:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px gold !important;
+}
+.favourite:hover {
+  color: gold !important;
+  transition: all 0.2s ease 0s;
+}
+
+.favourite:checked {
+  color: gold;
 }

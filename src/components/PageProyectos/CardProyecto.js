@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./CardProyecto.css";
 import { ProyectoShape } from "../../shapes";
 import { favContext } from "../../context/favContext";
-import { Opacity } from "@mui/icons-material";
 
 function CardProyecto({ proyecto }) {
   const [fav, setFav] = useState('☆')
@@ -43,21 +42,21 @@ function CardProyecto({ proyecto }) {
 
   return (
     <div id="cardProyecto" className="card" style={cardStyle} >
-      <p onClick={() => changeFav()} style={{ color: fav === '☆' ? starColor : starFavColor }} className="favourite">{fav}</p>
       <div className="fondoBody">
+        <p onClick={() => changeFav()} style={{ color: fav === '☆' ? starColor : starFavColor }} className="favourite">{fav}</p>
         <div className="textoBody">
-        <h2 id="proyectTitle"className="card-title">{proyecto.titulo}</h2>
-        <p id="proyectText" className="card-text">{proyecto.descripcion}</p>
-        <p id="proyectText" className="card-text">{proyecto.fecha_creacion}</p>
-        <p id="proyectText" className="card-text">
-          <b>Tecnologia: </b>{proyecto.tecnologia}
-        </p>
-        <a id="proyectUrl" href={proyecto.url}>Link del Repositorio</a><br />
-      </div>
-      <Link id="verMasButton" to={"/proyectos/" + proyecto.id} className="btn">
+          <h2 id="proyectTitle" className="card-title">{proyecto.titulo}</h2>
+          <p id="proyectText" className="card-text">{proyecto.descripcion}</p>
+          <p id="proyectText" className="card-text">{proyecto.fecha_creacion}</p>
+          <p id="proyectText" className="card-text">
+            <b>Tecnologia: </b>{proyecto.tecnologia}
+          </p>
+          <a id="proyectUrl" href={proyecto.url}>Link del Repositorio</a><br />
+        </div>
+        <Link id="verMasButton" to={"/proyectos/" + proyecto.id} className="btn">
           Ver Mas
         </Link>
-      </div> 
+      </div>
     </div>
   );
 }

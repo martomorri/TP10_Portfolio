@@ -8,8 +8,8 @@ function CarouselImages({ images }) {
         <Carousel className="car" data-bs-theme="dark" fade>
             {images.map(i => {
                 return (
-                    <Carousel.Item>
-                        <img src={'/' + i} alt="" width="100%" height="100%" />
+                    <Carousel.Item className="text-center">
+                        <img className="imageCarousel" src={i} alt="" width="50%" height="100%" />
                     </Carousel.Item>
                 )
             })}

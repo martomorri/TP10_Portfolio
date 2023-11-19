@@ -8,7 +8,7 @@
             "tecnologia": "React",
             "favorito": false,
             "fecha_creacion": "2023/07/13",
-            "imagenes": ["images/thumbnail1.png", "images/productos1.png", "images/homepage1.png"]
+            "imagenes": ["/images/thumbnail1.png", "/images/productos1.png", "/images/homepage1.png"]
         },
         {
             "id": 2,
@@ -18,7 +18,7 @@
             "tecnologia": "React",
             "favorito": false,
             "fecha_creacion": "2023/06/09",
-            "imagenes": [""]
+            "imagenes": ["/images/flagguesser1.png", "/images/flagguesser2.png"]
         },
         {
             "id": 3,
@@ -28,7 +28,7 @@
             "tecnologia": "React",
             "favorito": false,
             "fecha_creacion": "2023/05/04",
-            "imagenes": [""]
+            "imagenes": ["/images/citas1.png", "/images/citas2.png", "/images/citas3.png"]
         },
         {
             "id": 4,
@@ -38,7 +38,7 @@
             "tecnologia": "Javascript Vanilla",
             "favorito": false,
             "fecha_creacion": "2023/03/23",
-            "imagenes": [""]
+            "imagenes": ["/images/todo1.png", "/images/todo2.png"]
         },
         {
             "id": 5,
@@ -48,7 +48,7 @@
             "tecnologia": "C# .net MVC",
             "favorito": false,
             "fecha_creacion": "2022/08/18",
-            "imagenes": [""]
+            "imagenes": ["/images/qqsm1.png", "/images/qqsm2.png", "/images/qqsm3.png", "/images/qqsm4.png"]
         },
         {
             "id": 6,
@@ -58,7 +58,7 @@
             "tecnologia": "Javascript / Chrome Extension",
             "favorito": false,
             "fecha_creacion": "2023/05/15",
-            "imagenes": [""]
+            "imagenes": ["/images/dephished1.png", "/images/dephished2.png", "/images/dephished3.png"]
         },
         {
             "id": 7,
@@ -68,7 +68,7 @@
             "tecnologia": "C# .net MVC",
             "favorito": false,
             "fecha_creacion": "2022/05/26",
-            "imagenes": [""]
+            "imagenes": ["/images/escape1.png", "/images/escape2.png", "/images/escape3.png", "/images/escape4.png"]
         },
         {
             "id": 8,
@@ -78,7 +78,7 @@
             "tecnologia": "React",
             "favorito": false,
             "fecha_creacion": "2023/05/29",
-            "imagenes": [""]
+            "imagenes": ["/images/cancheros1.png", "/images/cancheros2.png", "/images/cancheros3.png", "/images/cancheros4.png"]
         },
         {
             "id": 9,
@@ -92,13 +92,13 @@
         },
         {
             "id": 10,
-            "titulo": "Authentication",
-            "descripcion": "Un login y register basico y simple para Mobile",
-            "url": "https://github.com/martomorri/DAI-Login.git",
+            "titulo": "E-Commerce Mobile",
+            "descripcion": "Una copia del famoso E-Commerce Mercado Libre, pero para celulares",
+            "url": "https://github.com/martomorri/E-Commerce_Mobile_DAI.git",
             "tecnologia": "React Native",
             "favorito": false,
             "fecha_creacion": "2023/08/04",
-            "imagenes": [""]
+            "imagenes": ["/images/dai1.png", "/images/dai2.png", "/images/dai3.png", "/images/dai4.png", "/images/dai5.png"]
         }
     ]
 }

@@ -8,3 +8,8 @@
 .car {
     margin-bottom: 10px;
 }
+
+.imageCarousel {
+    max-height: 500px;
+    max-width: max-content;
+}
