@@ -5,7 +5,7 @@ import './CarouselImages.css'
 
 function CarouselImages({ images }) {
     return images[0] !== "" ? (
-        <Carousel className="car" data-bs-theme="dark" fade>
+        <Carousel className="car" fade>
             {images.map(i => {
                 return (
                     <Carousel.Item className="text-center">
