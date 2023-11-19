@@ -33,22 +33,30 @@ function CardProyecto({ proyecto }) {
     }
   }
 
+  const cardStyle = {
+    backgroundImage: `url(${proyecto.imagenes[0]})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  };
+
   return (
-    <div id="cardProyecto" className="card">
+    <div id="cardProyecto" className="card" style={cardStyle} >
       <p onClick={() => changeFav()} style={{ color: fav === '☆' ? starColor : starFavColor }} className="favourite">{fav}</p>
-      <img id="imgCard" src={proyecto.imagenes[0]} className="card-img-top" alt="" />
-      <div className="card-body">
+      <div className="fondoBody">
+        <div className="textoBody">
         <h5 className="card-title">{proyecto.titulo}</h5>
         <p className="card-text">{proyecto.descripcion}</p>
         <p className="card-text">{proyecto.fecha_creacion}</p>
         <p className="card-text">
           <b>Tecnologia: </b>{proyecto.tecnologia}
         </p>
-        <a href={proyecto.url}>Link del Repositorio</a><br />
-        <Link id="verMasButton" to={"/proyectos/" + proyecto.id} className="btn">
+        <a  href={proyecto.url}>Link del Repositorio</a><br />
+      </div>
+      <Link id="verMasButton" to={"/proyectos/" + proyecto.id} className="btn">
           Ver Mas
         </Link>
-      </div>
+      </div> 
     </div>
   );
 }

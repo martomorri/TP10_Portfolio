@@ -22,6 +22,10 @@
   .social {
     color: rgb(44, 41, 41);
   }
+  #imgCard{
+    transform: scale3d(1.1, 1.1, 1.1);
+    box-shadow:  0 0 10px #640469;
+  }
 }
 
 #imgCard {

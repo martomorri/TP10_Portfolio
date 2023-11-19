@@ -26,7 +26,7 @@ function App() {
     },
     {
       nombre: "Lautaro Kaliszczak",
-      skills: ["javascript", "reactjs", "css", "html"],
+      skills: ["javascript", "reactjs", "css", "html","sql"],
       foto: "/images/lauty.png",
       fecha_nacimiento: "2005-11-10",
       profesion: "Estudiante",
