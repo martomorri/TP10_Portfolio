@@ -88,7 +88,7 @@
             "tecnologia": "C# .net MVC",
             "favorito": false,
             "fecha_creacion": "2022/10/13",
-            "imagenes": [""]
+            "imagenes": ["/images/db1.jpg"]
         },
         {
             "id": 10,

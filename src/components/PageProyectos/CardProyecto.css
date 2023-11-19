@@ -27,10 +27,7 @@
   min-width: 17.5rem;
 }
 
-#proyectTitle {
-  color: #969696;
-  opacity: 1;
-}
+#proyectTitle,
 #proyectText,
 #proyectUrl,
 #verMasButton {
@@ -50,6 +47,7 @@
   #proyectText,
   #proyectTitle {
     color: azure;
+    opacity: 1;
   }
 }
 
