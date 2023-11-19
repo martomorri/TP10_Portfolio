@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./CardProyecto.css";
 import { ProyectoShape } from "../../shapes";
 import { favContext } from "../../context/favContext";
+import { Opacity } from "@mui/icons-material";
 
 function CardProyecto({ proyecto }) {
   const [fav, setFav] = useState('☆')
@@ -45,13 +46,13 @@ function CardProyecto({ proyecto }) {
       <p onClick={() => changeFav()} style={{ color: fav === '☆' ? starColor : starFavColor }} className="favourite">{fav}</p>
       <div className="fondoBody">
         <div className="textoBody">
-        <h5 className="card-title">{proyecto.titulo}</h5>
-        <p className="card-text">{proyecto.descripcion}</p>
-        <p className="card-text">{proyecto.fecha_creacion}</p>
-        <p className="card-text">
+        <h2 id="proyectTitle"className="card-title">{proyecto.titulo}</h2>
+        <p id="proyectText" className="card-text">{proyecto.descripcion}</p>
+        <p id="proyectText" className="card-text">{proyecto.fecha_creacion}</p>
+        <p id="proyectText" className="card-text">
           <b>Tecnologia: </b>{proyecto.tecnologia}
         </p>
-        <a  href={proyecto.url}>Link del Repositorio</a><br />
+        <a id="proyectUrl" href={proyecto.url}>Link del Repositorio</a><br />
       </div>
       <Link id="verMasButton" to={"/proyectos/" + proyecto.id} className="btn">
           Ver Mas
