@@ -19,3 +19,7 @@ a#botonesNav:hover:after {
   width: 100%;
   left: 0;
 }
+
+.css-jcn4dz-MuiBadge-badge {
+  background-color: gold !important;
+}
