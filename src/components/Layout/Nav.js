@@ -6,23 +6,23 @@ function Nav() {
     const navItems = [
         {
             item: "Home",
-            path: "/"
+            path: "/#home"
         },
         {
             item: "About Us",
-            path: "#about-us"
+            path: "/#about-us"
         },
         {
             item: "Proyectos",
-            path: "#proyectos"
+            path: "/#proyectos"
         },
         {
             item: "Skills",
-            path: "#skills"
+            path: "/#skills"
         },
         {
             item: "Contacto",
-            path: "#form-contacto"
+            path: "/#form-contacto"
         }
     ];
 
