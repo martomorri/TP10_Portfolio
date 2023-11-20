@@ -5,13 +5,14 @@
   padding: 0;
   text-align: center;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
   transition: 0.3s ease;
 }
 
 #cardProyecto:hover {
   transform: translate(-0%, -4%);
   box-shadow: 0 0 10px gold;
+  border: 1px solid rgba(0, 0, 0, 0.5);
   transition: all 0.3s;
 }
 
@@ -39,6 +40,7 @@
   backdrop-filter: blur(10px);
   background: rgba(0, 0, 0, 0.5);
   border-color: azure;
+  transition: opacity 0.4s;
   #proyectText,
   #proyectUrl,
   #verMasButton {
