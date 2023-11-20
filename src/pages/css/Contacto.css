@@ -12,6 +12,6 @@
 }
 
 .error {
-    color: rgb(255, 94, 0);
+    color: red;
     font-size: 16px;
 }
