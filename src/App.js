@@ -10,6 +10,7 @@ import { devsContext } from './context/devsContext';
 import './App.css';
 import Favoritos from './pages/js/Favoritos';
 import IndexPage from './pages/js/IndexPage';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 function App() {
   const [proyectos, setProyectos] = useState([])
@@ -26,7 +27,7 @@ function App() {
     },
     {
       nombre: "Lautaro Kaliszczak",
-      skills: ["javascript", "reactjs", "css", "html","sql"],
+      skills: ["javascript", "reactjs", "css", "html", "sql"],
       foto: "/images/lauty.png",
       fecha_nacimiento: "2005-11-10",
       profesion: "Estudiante",
@@ -50,23 +51,38 @@ function App() {
     localStorage.setItem("favProj", JSON.stringify(favProj))
   }, [favProj])
 
+  let theme = createTheme({});
+
+  theme = createTheme(theme, {
+    palette: {
+      gold: theme.palette.augmentColor({
+        color: {
+          main: '#ffd700',
+        },
+        name: 'gold',
+      }),
+    },
+  });
+
   return (
-    <favContext.Provider value={{ favProj, setFavProj }}>
-      <projectsContext.Provider value={{ proyectos, setProyectos }}>
-        <devsContext.Provider value={devs}>
-          <BrowserRouter>
-            <Routes>
-              <Route path='/' element={<Layout />}>
-                <Route index element={<IndexPage />}></Route>
-                <Route path={"/proyectos"} element={<PageProyectos />}></Route>
-                <Route path={"/favoritos"} element={<Favoritos />}></Route>
-                <Route path={"/proyectos/:id"} element={<Proyecto />}></Route>
-              </Route>
-            </Routes>
-          </BrowserRouter>
-        </devsContext.Provider>
-      </projectsContext.Provider>
-    </favContext.Provider>
+    <ThemeProvider theme={theme}>
+      <favContext.Provider value={{ favProj, setFavProj }}>
+        <projectsContext.Provider value={{ proyectos, setProyectos }}>
+          <devsContext.Provider value={devs}>
+            <BrowserRouter>
+              <Routes>
+                <Route path='/' element={<Layout />}>
+                  <Route index element={<IndexPage />}></Route>
+                  <Route path={"/proyectos"} element={<PageProyectos />}></Route>
+                  <Route path={"/favoritos"} element={<Favoritos />}></Route>
+                  <Route path={"/proyectos/:id"} element={<Proyecto />}></Route>
+                </Route>
+              </Routes>
+            </BrowserRouter>
+          </devsContext.Provider>
+        </projectsContext.Provider>
+      </favContext.Provider>
+    </ThemeProvider>
   );
 }
 

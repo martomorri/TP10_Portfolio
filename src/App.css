@@ -1,10 +1,13 @@
 * {
-  font-family: 'Kdam Thmor Pro';
+  font-family: "Kdam Thmor Pro";
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 body {
   background-color: black;
-  color:azure;
+  color: azure;
 }
 
 .App {

@@ -11,7 +11,7 @@ function NavItem({ item, path = "" }) {
   return (
     <li className="nav-item">
       <a className="btn" id="botonesNav" href={path}>
-        <Badge id="badge" badgeContent={badge}>
+        <Badge id="badge" color="gold" badgeContent={badge}>
           {item}
         </Badge>
       </a>
